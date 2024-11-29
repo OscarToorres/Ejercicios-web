@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="POST">
+        <input type="text" name="nombre" placeholder="Escribe tu nombre"><br/>
+        <input type="text" name="apellidos" placeholder="Escribe tus apellidos"><br/>
+        <label for="mensaje">Direccion:</label><br/>
+        <input type="text" name="tipo_via" placeholder="Tipo de via"><br/>
+        <input type="text" name="nombre_via" placeholder="Nombre de la via"><br/>
+        <input type="text" name="codigo_postal" placeholder="Codigo postal"><br/>
+        <input type="text" name="ciudad" placeholder="Ciudad"><br/>
+        <input type="text" name="provincia" placeholder="Provincia"><br/>
+        <input type="text" name="pais" placeholder="Pais"><br/>
+        <label>Fecha de nacimiento:</label>
+        <input type="date" name="fecha_nacimiento" placeholder="Fecha de nacimiento"><br/>
+        <input type="number" name="nota_media" placeholder="Nota media en la universidad"><br/>
+        <input type="number" name="numero_telefono" placeholder="Numero de telefono" pattern="\d{9}"><br/>
+        <input type="text" name="correo" placeholder="Correo electronico"><br/>
+        <input type="password" name="pss" placeholder="Contraseña"><br/>
+        <input type="password" name="val_pss" placeholder="Repetir contraseña"><br/>
+        <label for="pais">País:</label>
+        <select name="select_pais" required>
+          <option value="espana">España</option>
+          <option value="francia">Francia</option>
+          <option value="portugal">Portugal</option>
+          <option value="andorra">Andorra</option>
+        </select>
+        <label>Tipo de cuenta:</label>
+        <select name="tipo_cuenta" required>
+            <option value="gratuita" title="No pagas">Gratuita</option>
+            <option value="basica" title="Pagas poco">Basica</option>
+            <option value="premium" title="Pagas mucho">Premium</option>
+        </select><br/>
+        <label>Sobre mi:</label>
+        <textarea placeholder="Breve descripcion"></textarea><br/>
+        <label>Foto de perfil:</label>
+        <input type="file" name="imagen" accept="image/*" required>
+        <label>Subir CV:</label>
+        <input type="file" name="cv" accept=".pdf" required>
+    </form>
+</body>
+</html>
